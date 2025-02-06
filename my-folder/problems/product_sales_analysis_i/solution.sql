@@ -1,4 +1,4 @@
-select pr.product_name, sl.year, sl.price
-from Sales as sl
-join Product as pr
-on sl.product_id = pr.product_id
+select Product.product_name,Sales.year,Sales.price
+from Sales
+join Product
+on Sales.product_id=Product.product_id;
